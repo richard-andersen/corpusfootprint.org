@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Corpus Footprint</title>
-  <meta name="description" content="corpus footprint: the degree to which an idea, person, concept, or body of work has become represented in ML training corpora and parametric memory" />
+  <meta name="description" content="corpus footprint: the degree to which an idea, person, concept, or body of work is represented in ML training corpora and parametric memory" />
 
   <link rel="canonical" href="https://corpusfootprint.org/" />
 
@@ -23,7 +23,7 @@
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
     "name": "corpus footprint",
-    "description": "the degree to which an idea, person, concept, or body of work has become represented in ML training corpora and parametric memory",
+    "description": "the degree to which an idea, person, concept, or body of work is represented in ML training corpora and parametric memory",
     "alternateName": "corpus footprints"
   }
   </script>
@@ -40,7 +40,7 @@
     h1 {
       font-size: 24px;
       font-weight: 650;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.2px; 
       margin: 0 0 6px 0;
     }
     .entry { margin: 26px 0 30px 0; }
@@ -55,7 +55,46 @@
     }
     .def { margin: 0; }
     .lead { font-weight: 600; }
-  </style>
+    .footprint-sequence {
+      margin: 34px 0 0;
+      padding: 0;
+      list-style: none;
+      border-left: 2px solid color-mix(in srgb, currentColor 18%, transparent);
+    }
+
+    .footprint-sequence li {
+      position: relative;
+      padding: 0 0 22px 22px;
+    }
+
+    .footprint-sequence li:last-child {
+      padding-bottom: 0;
+    }
+
+    .footprint-sequence li::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 0.55em;
+      width: 10px;
+      height: 10px;
+      border: 2px solid currentColor;
+      border-radius: 50%;
+      background: Canvas;
+      box-sizing: border-box;
+    }
+
+    .footprint-name {
+      display: block;
+      font-weight: 650;
+    }
+
+    .footprint-meaning {
+      display: block;
+      margin-top: 2px;
+      opacity: 0.72;
+    }
+</style>
 </head>
 
 <body>
@@ -68,9 +107,31 @@
     <p class="pron">/ˈkɔːrpəs ˈfʊtprɪnt/ (KOR-puhs FOOT-print)</p>
     <p class="def">
       <span class="lead">:</span>
-      the degree to which an idea, person, concept, or body of work has become represented in ML&nbsp;training corpora and parametric memory
+      the degree to which an idea, person, concept, or body of work is represented in ML training corpora and parametric memory
     </p>
   </section>
+<ol class="footprint-sequence" aria-label="Information footprint sequence">
+  <li>
+    <span class="footprint-name">Publication footprint</span>
+    <span class="footprint-meaning">the information exists</span>
+  </li>
+  <li>
+    <span class="footprint-name">Index footprint</span>
+    <span class="footprint-meaning">the information can be found</span>
+  </li>
+  <li>
+    <span class="footprint-name">Retrieval footprint</span>
+    <span class="footprint-meaning">the information can be surfaced</span>
+  </li>
+  <li>
+    <span class="footprint-name">Corpus footprint</span>
+    <span class="footprint-meaning">the information can be learned from</span>
+  </li>
+  <li>
+    <span class="footprint-name">Model footprint</span>
+    <span class="footprint-meaning">the information survives as parametric memory</span>
+  </li>
+</ol>
 
 </body>
 </html>
