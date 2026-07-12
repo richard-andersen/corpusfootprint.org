@@ -114,6 +114,8 @@
     }
 .further-reading {
   margin: 52px 0 0;
+  width: calc(100% + 110px);
+  max-width: calc(100vw - 36px);
 }
 .further-reading h2 {
   margin: 0 0 18px;
@@ -128,6 +130,11 @@
   color: inherit;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+}
+@media (max-width: 820px) {
+  .further-reading {
+    width: 100%;
+  }
 }
 </style>
 </head>
@@ -239,35 +246,35 @@
     <a href="https://arxiv.org/abs/1803.09010">
       <strong>Datasheets for Datasets</strong>
     </a>
-    — Timnit Gebru et al.<br>
+    <br>—&nbsp;Timnit Gebru et al.<br>
     Explains why the origin, composition, and documentation of datasets matter.
   </p>
   <p>
     <a href="https://arxiv.org/abs/2202.07646">
       <strong>Quantifying Memorization Across Neural Language Models</strong>
     </a>
-    — Nicholas Carlini et al.<br>
+    <br>—&nbsp;Nicholas Carlini et al.<br>
     Shows that some training material is retained more strongly than other material.
   </p>
   <p>
     <a href="https://arxiv.org/abs/2012.07805">
       <strong>Extracting Training Data from Large Language Models</strong>
     </a>
-    — Nicholas Carlini et al.<br>
+    <br>—&nbsp;Nicholas Carlini et al.<br>
     Demonstrates that some training examples can survive strongly enough to be recovered from model outputs.
   </p>
   <p>
     <a href="https://arxiv.org/abs/2310.16787">
-      <strong>The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing &amp; Attribution in AI</strong>
+      <strong>The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing &amp; Attribution in&nbsp;AI</strong>
     </a>
-    — Shayne Longpre et al.<br>
+    <br>—&nbsp;Shayne Longpre et al.<br>
     Examines how difficult it can be to trace the provenance and reuse of training data.
   </p>
   <p>
     <a href="https://authoritytech.io/curated/ai-rank-meaningless-appearance-rate-metric">
       <strong>AI Brand Rank Is Meaningless. This Metric Actually Predicts When ChatGPT Recommends You.</strong>
     </a>
-    — AuthorityTech<br>
+    <br>—&nbsp;AuthorityTech<br>
     Provides an earlier, narrower use of the phrase <em>corpus footprint</em> in the context of brand visibility in AI systems.
   </p>
 </section>
