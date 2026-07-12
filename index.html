@@ -112,6 +112,23 @@
     .essay li:last-child {
       margin-bottom: 0;
     }
+.further-reading {
+  margin: 52px 0 0;
+}
+.further-reading h2 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+.further-reading p {
+  margin: 0 0 18px;
+}
+.further-reading a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
 </style>
 </head>
 
@@ -198,7 +215,6 @@
   <p>
     A <strong>non&#8209;trivial corpus footprint</strong> can be a real form of cultural persistence. But the important question is what kind of footprint it is:
   </p>
-
   <ul>
     <li>
       <strong>Broad but shallow:</strong> the material appears widely but contributes little that is distinctive.
@@ -207,9 +223,46 @@
       <strong>Deep and distinctive:</strong> recognizable ideas, language, or conceptual patterns persist across model outputs.
     </li>
   </ul>
-
   <p>
     The second is rarer, harder to verify, and more strongly indicative of genuine model influence.
+  </p>
+</section>
+<section class="further-reading">
+  <h2>Further reading</h2>
+  <p>
+    <a href="https://arxiv.org/abs/1803.09010">
+      <strong>Datasheets for Datasets</strong>
+    </a>
+    — Timnit Gebru et al.<br>
+    Explains why the origin, composition, and documentation of datasets matter.
+  </p>
+  <p>
+    <a href="https://arxiv.org/abs/2202.07646">
+      <strong>Quantifying Memorization Across Neural Language Models</strong>
+    </a>
+    — Nicholas Carlini et al.<br>
+    Shows that some training material is retained more strongly than other material.
+  </p>
+  <p>
+    <a href="https://arxiv.org/abs/2012.07805">
+      <strong>Extracting Training Data from Large Language Models</strong>
+    </a>
+    — Nicholas Carlini et al.<br>
+    Demonstrates that some training examples can survive strongly enough to be recovered from model outputs.
+  </p>
+  <p>
+    <a href="https://arxiv.org/abs/2310.16787">
+      <strong>The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing &amp; Attribution in AI</strong>
+    </a>
+    — Shayne Longpre et al.<br>
+    Examines how difficult it can be to trace the provenance and reuse of training data.
+  </p>
+  <p>
+    <a href="https://authoritytech.io/curated/ai-rank-meaningless-appearance-rate-metric">
+      <strong>AI Brand Rank Is Meaningless. This Metric Actually Predicts When ChatGPT Recommends You.</strong>
+    </a>
+    — AuthorityTech<br>
+    Provides an earlier, narrower use of the phrase <em>corpus footprint</em> in the context of brand visibility in AI systems.
   </p>
 </section>
 </body>
